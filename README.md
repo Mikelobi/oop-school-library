@@ -1,4 +1,4 @@
-# ruby-my-enumerable
+# OOP-SCHOOL-LIBRARY
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 > This repo hosts a nifty ruby program for a library at the OOP University. 
