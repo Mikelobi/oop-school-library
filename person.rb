@@ -1,7 +1,7 @@
 require_relative './decorator'
 require_relative './nameable'
 # Person class
-class Person
+class Person < Nameable
   attr_accessor :name, :age
   attr_reader :id
 
