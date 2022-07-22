@@ -1,7 +1,6 @@
 require './person'
 require './student'
 require './teacher'
-require './decorator'
 require './classroom'
 require './book'
 require './rental'
@@ -105,7 +104,7 @@ class App
     print 'Has parent permission? [Y/N]: '
     parent_permission = gets.chomp.downcase
     puts 'Thank you for giving permission' if parent_permission
-    student = Student.new(age, name, @class)
+    student = Student.new(@class, age, name)
     @people << student
     puts "Student #{name} created successfully"
     sleep 0.5
@@ -118,7 +117,7 @@ def create_teacher
   name = person_name_input
   print 'Area of specialization [e.g. Physics]: '
   specialization = gets.chomp
-  teacher = Teacher.new(age, name, specialization)
+  teacher = Teacher.new(specialization, age, name)
   @people << teacher
   puts "Teacher #{name} created successfully"
   sleep 0.5
@@ -144,7 +143,7 @@ def create_book
   book = Book.new(title, author)
   @books << book
 
-  puts "Book #{title} created successfully"
+  puts "Book #{title} by #{author} created successfully"
   display_options
 end
 
@@ -174,7 +173,7 @@ def create_rental
     puts 'Enter date (Format: 2020/05/04): '
     date = gets.chomp.to_s
 
-    rental = Rental.new(date, @people[person_id], @books[book_id])
+    rental = Rental.new(date, @books[book_id, @people[person_id]])
     @rentals << rental
     puts "Book: #{@books[book_id].title} rented successfully"
     sleep 0.75
