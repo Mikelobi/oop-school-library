@@ -19,7 +19,7 @@ Clone the project, make sure you have ruby installed and you are good to go
 
 ## Author
 
-👤 **Ben**
+👤 **Mikelobi**
 
 - GitHub: [Mikelobi](https://github.com/Mikelobi)
 - Twitter: [Mikelobi](https://twitter.com/omulum)
