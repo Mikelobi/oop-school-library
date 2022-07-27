@@ -1,8 +1,3 @@
 require './app'
-
-def main
-  app = App.new
-  app.run
-end
-
-main
+app = App.new
+app.show_menu
