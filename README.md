@@ -25,6 +25,12 @@ Clone the project, make sure you have ruby installed and you are good to go
 - Twitter: [Mikelobi](https://twitter.com/omulum)
 - LinkedIn: [Mikelobi](https://www.linkedin.com/in/ugochukwu-omulu/)
 
+👤 **Christian**
+
+- GitHub: [@christianbiring1](https://github.com/christianbiring1)
+- Twitter : [christianbiring4)[https://twitter.com/@christianbiring4]
+- LinkedIn: [Mikelobi](https://www.linkedin.com/in/christian-biringanine/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
