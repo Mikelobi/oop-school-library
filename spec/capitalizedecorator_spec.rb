@@ -1,14 +1,12 @@
 require './capitalizedecorator'
+require './person'
 
 describe CapitalizeDecorator do
-
-  context 'The test suppose to pass' do
-    it 'Should convert the name into capital case' do
-      nameable = double('nameable')
-
-      allow(nameable).to receive(:nameable) {correct_name'John Smith'}
-      cr = CapitalizeDecorator.new(nameable)
-      expect(cr.correct_name).to be('JOHN SMITH')
+  context 'text for CapitalizeDecorator class' do
+    person = Person.new(name: 'collins', age: 11, id: 2, parent_permission: true)
+    cr = CapitalizeDecorator.new(person)
+    it 'Should convert the name into COLLINS' do
+      expect(cr.correct_name).to eq('COLLINS')
     end
   end
 end
