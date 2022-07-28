@@ -14,7 +14,6 @@ describe Person do
 
       expect(person.can_use_services?).to be true
       expect(person.add_rental(rental)).to eq(['2020/07/20'])
-      expect(person.of_age?).to be true
     end
   end
 end
