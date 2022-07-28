@@ -99,6 +99,6 @@ class JsonAccessor
   end
 
   def rental_to_json(rental)
-    { date: rental.date, book: rental.book.id, person: rental.person.id }.to_json
+    { date: rental.date, book: rental.book.title, person: rental.person.name }.to_json
   end
 end
