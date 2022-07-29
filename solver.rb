@@ -1,10 +1,11 @@
 class Solver
-  def factorial(n)
-    raise ArgumentError.new('Negative number can\'t have factorial') if n < 0
+  def factorial(number)
+    raise ArgumentError, 'Negative number can\'t have factorial' if number.negative?
+
     out = 1
-    while n >= 1 do
-      out *= n
-      n -= 1
+    while number >= 1
+      out *= number
+      number -= 1
     end
     out
   end
@@ -13,15 +14,15 @@ class Solver
     word.reverse
   end
 
-  def fizzbuzz(n)
-    if (n % 3 === 0) && (n % 5 === 0)
+  def fizzbuzz(number)
+    if (number % 3).zero? && (number % 5).zero?
       'fizzbuzz'
-    elsif (n % 3 === 0)
+    elsif (number % 3).zero?
       'fizz'
-    elsif (n % 5 === 0)
+    elsif (number % 5).zero?
       'buzz'
     else
-      n
+      number
     end
   end
 end

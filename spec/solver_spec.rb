@@ -4,7 +4,7 @@ describe Solver do
   it 'the class solver methods must fullfil all the required conditions' do
     solver = Solver.new
 
-    expect{solver.factorial(-1)}.to raise_error('Negative number can\'t have factorial',ArgumentError)
+    expect { solver.factorial(-1) }.to raise_error('Negative number can\'t have factorial', ArgumentError)
     expect(solver.factorial(0)).to eq(1)
     expect(solver.factorial(5)).to eq(120)
 
